@@ -1,0 +1,140 @@
+:root{
+    --principal-font:'Quattrocento Sans', sans-serif;
+/* Color Theme Swatches in RGBA */
+--pink:  rgba(223, 179, 242, 1); 
+--violet: rgba(172, 152, 242, 0.4); 
+--blue: rgba(167, 185, 242, 1); 
+--cream:rgba(216, 216, 216, 1); 
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    background-color:whitesmoke;
+    width: 100%;
+    height: 85px;
+    align-items: center;
+    justify-content: center;
+}
+.nav__logo img{
+width: 70px;
+height: 70px;
+}
+
+.home__contain-slide{
+    position: relative;
+    margin: 50px auto;
+    max-width: 1000px;
+}
+.home__slide{
+    display: flex;
+    width: 90%;
+    height: 471px;
+    margin: auto;
+    overflow-x: scroll;
+    border-radius: 8px;
+    box-shadow: 0 14px 25px rgba(0,0,0,.16);
+    height: fit-content;
+}
+.home__slide::-webkit-scrollbar {
+    display: none;
+}
+.home__slide img{
+    margin:0 2px;
+    width: 100%;
+    /* object-fit: cover; */
+    height: fit-content;
+
+    
+}
+.home__contain-slide .control{
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    cursor: pointer;
+    object-fit: cover;
+}
+.home__contain-slide .control:nth-child(2){
+    right: 0;
+    top: 50%; 
+}
+.home__contain-slide .control:nth-child(1){
+    left: 0;
+    top: 50%;
+    transform: rotate(180deg);
+     
+}
+.home__banner{
+   
+    display: flex;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Quattrocento Sans', sans-serif;
+    width: 50%;
+
+}
+.home__banner h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.home__banner p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.type__yoga{
+    margin: 50px auto;
+    background-color: var(--violet);
+}
+.type__yoga-content{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.type__yoga-intro{
+    text-align: center;
+    margin: 40px auto;
+}
+.type__yoga-intro h2{
+    font-family: var(--principal-font);
+    margin-bottom: 12px;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+}
+.type__yoga-intro p{
+    font-family: var(--principal-font);
+    margin-bottom: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+}
+.type__yoga-content-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cards{
+box-sizing: border-box;
+text-align: center;
+width: 100%;
+margin: 30px;
+}
+.cards h2{
+    font-family: var(--principal-font);
+    margin-bottom: 12px;
+
+}
+.cards img{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
