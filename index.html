@@ -1,88 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="" href="./index.js">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-        </style>
+    </style>
 </head>
+
 <body>
     <nav>
-        <div class="nav__logo">
-           <img src="./imgs/logo-removebg-preview.png" alt="">
-            
+        <div class="nav-logo">
+            <img src="./imgs/logo-removebg-preview.png" alt="">
+
         </div>
     </nav>
     <div class="home-page">
-        <div class="home__contain-slide">
-            <img class="control" src="./imgs/flecha_siguiente-removebg-preview.png" alt="">
-            <img class="control" src="./imgs/flecha_siguiente-removebg-preview.png" alt="">
-            <div class="home__slide">
-             <img src="https://images.squarespace-cdn.com/content/v1/6166dd06bfccf36849f1c9eb/6af92d5b-229b-4432-bc09-bc45e2b755a9/Blog+Photos+%281640+x+1000+px%29.png" alt="">
-             <img src="https://cdn.shopify.com/s/files/1/0040/3098/8386/articles/Supported-Back-Bend-1_1600x.jpg?v=1538851612" alt="">
-             <!-- <img src="./imgs/1.jpeg" alt="">
-             <img src="./imgs/2.jpeg" alt="">
-             <img src="./imgs/3.jpeg" alt=""> -->
-            </div>
-        </div>
-     
-        <div class="home__banner">
-                <h1>Tomate el tiempo</h1>
-                <p>El yoga es una práctica que busca el <strong>equilibrio entre alma y cuerpo</strong>, su ejecución trae un sinfín de beneficios para el organismo.</p>
-                <p>Através de ella, se busca obtener mayor bienestar y felicidad.</p>
-                <p>Nuestras clases combinan <strong> elongacion,meditacion, movilidad y respiracion</strong></p>
-                <P>Te invito a que pruebes esta experiencia</P>
-        </div>
 
-        <div class="type__yoga">
-                <div class="type__yoga-content">
-                    <div class="type__yoga-intro">
-                        <H2>Tipos de yoga</H2>
-                        <P>Cada uno es diferenta y sirve para para algo distinto</P>
-                    </div>
-                    <div class="type__yoga-content-cards">
-                        <div class="cards">
-                                <h2>Yin Yoga</h2>
-                                <img src="./imgs/2.jpeg" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio alias sunt autem aliquam voluptates earum et magnam.</p>
-                        </div>
-                        <div class="cards">
-                                 <h2>Vinyasa Yoga</h2>
-                                 <img src="./imgs/2.jpeg" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio alias sunt autem aliquam voluptates earum et magnam.</p>
-                         </div>
-                         <div class="cards">
-                            <h2>Vinyasa Flow</h2>
-                            <img src="./imgs/2.jpeg" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio alias sunt autem aliquam voluptates earum et magnam.</p>
-                        </div>
-                        <div class="cards">
-                            <h2>Vinyasa + Yin</h2>
-                            <img src="./imgs/2.jpeg" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio alias sunt autem aliquam voluptates earum et magnam.</p>
-                        </div>
-                        <div class="cards">
-                            <h2>Gap</h2>
-                            <img src="./imgs/2.jpeg" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio alias sunt autem aliquam voluptates earum et magnam.</p>
-                        </div>
-                        <div class="cards">
-                            <h2>Especiales Luna</h2>
-                            <img src="./imgs/2.jpeg" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio alias sunt autem aliquam voluptates earum et magnam.</p>
-                        </div>
-                    </div>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6166dd06bfccf36849f1c9eb/6af92d5b-229b-4432-bc09-bc45e2b755a9/Blog+Photos+%281640+x+1000+px%29.png"
+                        alt="yoga image">
+                </div>
+
+                <div class="slide">
+                    <img src="https://cdn.shopify.com/s/files/1/0040/3098/8386/articles/Supported-Back-Bend-1_1600x.jpg?v=1538851612"
+                        alt="yoga image">
+
                 </div>
 
             </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
 
-        
+        <div class="home-banner">
+            <h1>Tomate el tiempo</h1>
+            <p>El yoga es una práctica que busca el <strong>equilibrio entre alma y cuerpo</strong>, su ejecución
+                trae un sinfín de beneficios para el organismo.</p>
+            <p>Através de ella, se busca obtener mayor bienestar y felicidad.</p>
+            <p>Nuestras clases combinan <strong> elongacion,meditacion, movilidad y respiracion</strong></p>
+            <P>Te invito a que pruebes esta experiencia</P>
+        </div>
+
+        <div class="types-yoga">
+            <div class="types-yoga-content">
+                <div class="types-yoga-intro">
+                    <H2>Tipos de yoga</H2>
+                    <P>Cada uno es diferenta y sirve para para algo distinto</P>
+                </div>
+                <div class="types-yoga-content-cards">
+                    <div class="cards">
+                        <h2>Yin Yoga</h2>
+                        <div class="cards-detail">
+                            <img src="./imgs/2.jpeg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio alias sunt
+                                autem aliquam voluptates earum et magnam.</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <h2>Vinyasa Yoga</h2>
+                        <div class="cards-detail">
+                            <img src="./imgs/2.jpeg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio alias sunt
+                                autem aliquam voluptates earum et magnam.</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <h2>Vinyasa Flow</h2>
+                        <div class="cards-detail">
+                            <img src="./imgs/2.jpeg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio alias sunt
+                                autem aliquam voluptates earum et magnam.</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <h2>Vinyasa + Yin</h2>
+                        <div class="cards-detail">
+                            <img src="./imgs/2.jpeg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio alias sunt
+                                autem aliquam voluptates earum et magnam.</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <h2>Gap</h2>
+                        <div class="cards-detail">
+                            <img src="./imgs/2.jpeg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio alias sunt
+                                autem aliquam voluptates earum et magnam.</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <h2>Especiales Luna</h2>
+                        <div class="cards-detail">
+                            <img src="./imgs/2.jpeg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio alias sunt
+                                autem aliquam voluptates earum et magnam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
 
     </div>
 
+    <script src="./index.js"></script>
 </body>
+
 </html>
